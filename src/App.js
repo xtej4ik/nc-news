@@ -16,7 +16,7 @@ function App() {
       <Nav  user={user} setUser={setUser}/>
       <Routes>
         <Route path="/sign-in" element={<SignIn user={user} setUser={setUser} />} />
-        <Route path="/" element={<AllArticles user={user} />} />
+        <Route path="/" element={<AllArticles user={user} />} /> 
       </Routes>
     </div>
   );

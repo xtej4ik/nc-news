@@ -1,3 +1,4 @@
+import '../styles.css'
 const Nav = ({ user, setUser }) => {
 
     const logout = () => {
@@ -7,7 +8,7 @@ const Nav = ({ user, setUser }) => {
         return (
             <div>
                 <p>{user.name}</p>
-                <img src={user.avatar_url} />
+                <img class="avatar" src={user.avatar_url} />
                 <button onClick={logout}>Logout</button>
             </div>
         )
