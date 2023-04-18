@@ -5,8 +5,6 @@ import { signIn } from "../api"
 const SignIn = ({user, setUser}) => {
   const navigate = useNavigate()
 
-// redirect back to home page if user already logged in
-
   useEffect(() => {
     if(user) {
         navigate('/')

@@ -23,14 +23,14 @@ const AllArticles = ({ user }) => {
           {list.map((article) => {
                 return (
                     <li key={article.article_id} className="article">
-                        <p>Title: {article.title}</p>
+                        <img src={article.article_img_url} alt="article image" className="responsive-img"></img>
+                        <p><h4>Title: {article.title}</h4></p>
                         <p>Topic: {article.topic}</p>
                         <p>Author: {article.author}</p>
                         <p>Body: {article.body}</p>
                         <p>Created at: {article.created_at}</p>
                         <p>Votes: {article.votes}</p>
                         <p>Comments: {article.comments}</p>
-                        <img src={article.article_img_url} alt="article image" className="responsive-img"></img>
                     </li>
                 );
             })}
