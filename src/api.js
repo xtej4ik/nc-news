@@ -29,8 +29,9 @@ export const signIn = (username) => {
 
 export const fetchArticleById = (article_id) => {
   return instance
-  .get("/articles/:article_id")
+  .get(`/articles/${article_id}`)
   .then((response) => {
     return response.data.article;
   })
 }
+
