@@ -1,16 +1,20 @@
 import axios from "axios";
 
+const instance = axios.create({
+  baseURL: "https://nc-news-p3zx.onrender.com/api",
+});
+
 export const fetchAllArticles = (article) => {
-    return axios
-      .get(`https://nc-news-p3zx.onrender.com/api/articles`)
+    return instance
+      .get("/articles")
       .then((response) => {
         return response.data.articles;
       });
   };
 
 export const signIn = (username) => {
-    return axios
-    .get(`https://nc-news-p3zx.onrender.com/api/users`)
+    return instance
+    .get("/users")
     .then((response) => {
       const result = response.data.users.filter(user => user.username === username);
 

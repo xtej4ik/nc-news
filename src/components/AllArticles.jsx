@@ -24,7 +24,7 @@ const AllArticles = ({ user }) => {
                 return (
                     <li key={article.article_id} className="article">
                         <img src={article.article_img_url} alt="article image" className="responsive-img"></img>
-                        <p><h4>Title: {article.title}</h4></p>
+                        <h4>Title: {article.title}</h4>
                         <p>Topic: {article.topic}</p>
                         <p>Author: {article.author}</p>
                         <p>Body: {article.body}</p>
