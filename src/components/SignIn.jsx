@@ -9,7 +9,7 @@ const SignIn = ({user, setUser}) => {
     if(user) {
         navigate('/')
     }
-  }, [user])
+  }, [user, navigate])
 
   const [name, setName] = useState("");
 
@@ -23,15 +23,14 @@ const SignIn = ({user, setUser}) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <br/>
+      <br/>
       <label htmlFor="username">Username:&nbsp;&nbsp;</label>
       <input
         id="username"
         value={name}
         onChange={(event) => setName(event.target.value)}
       ></input>
-      <br />
-      <br />
-      <button type="submit" disabled={!name}>Log in</button>
     </form>
   );
 };
