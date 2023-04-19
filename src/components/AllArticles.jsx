@@ -20,7 +20,7 @@ const AllArticles = ({ user }) => {
         {isLoading ? (
         <h3>Loading...</h3>
          ) : (
-        <ul style={{paddingInline:0}}>
+        <ul>
           {list.map((article) => {
                 return (
                   <div key={article.article_id} className="article">
@@ -32,9 +32,6 @@ const AllArticles = ({ user }) => {
                       <section>Topic: {article.topic}</section>
                       <p>Author: {article.author}</p>
                       <p>Body: {article.body}</p>
-                      <time>Created at: {article.created_at}</time>
-                      <p>Votes: {article.votes}</p>
-                      <p>Comments: {article.comments}</p>
                   </div>
               );
             })}

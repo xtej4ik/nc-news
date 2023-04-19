@@ -10,12 +10,12 @@ const Nav = ({ user, setUser }) => {
         return (
             <div className='navbar'>
                 <p>{user.name}</p>
-                <img class="avatar" src={user.avatar_url} />
-                <button onClick={logout}>Logout</button>
+                <img className="avatar" alt="avatar" src={user.avatar_url} />
+                <button className="login-button" onClick={logout}>Logout </button>
             </div>
         )
     } else {
-        return (<div className='navbar'><button onClick={() => navigate('/sign-in')}>Login</button></div>)
+        return (<div className='navbar'><button className="login-button" onClick={() => navigate('/sign-in')}>Login</button></div>)
     }
 
 }

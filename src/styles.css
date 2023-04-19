@@ -3,15 +3,24 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  animation: float 2s ease-in-out infinite;
 }
 
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 10px); }
+  100% { transform: translate(0, 0); }
+}
 
 .navbar {
   position : sticky;
 	top :0;
   font-size: 30px;
   color: white;
-  background-color:  #f73c6b;
+  background-color:  #a02c5945;
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 14vh;
 }
 
 .responsive-img {
@@ -22,4 +31,114 @@
 .article {
   margin: 1px;
   box-shadow: 0px 5px 5px rgba(25, 25, 26, 0.534);
+}
+
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+.panel.expanded {
+  max-height: 500px;
+  transition: max-height 0.2s ease-in;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: .06em dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 7.5em;
+  background-color: rgba(35, 117, 68, 0.549);
+  color: #fff;
+  text-align: center;
+  border-radius: .4em;
+  padding: .3em 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.homebutton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #235d25;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #5a9583;
+}
+
+.homebutton:hover {background-color: #454945}
+
+.homebutton:active {
+  background-color: #0d1e0e3c;
+  box-shadow: 0 5px #2c5c42;
+  transform: translateY(4px);
+}
+
+.login-button {
+  margin: .3em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #235d25;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #5a9583;
+}
+
+.login-button:hover {background-color: #454945}
+
+.login-button:active {
+  background-color: #0d1e0e3c;
+  box-shadow: 0 5px #2c5c42;
+  transform: translateY(4px);
 }
