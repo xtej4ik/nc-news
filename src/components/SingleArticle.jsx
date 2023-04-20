@@ -24,9 +24,6 @@ const SingleArticle = () => {
         if (hasVoted && voteType === article.voteType) {
           setVoteError("Oooops! You have already voted once!");
           return;
-        } else if (hasVoted && voteType !== article.voteType) {
-          const newVotesCount = voteType === 'up' ? article.votes + 2 : article.votes - 2;
-          setArticle({ ...article, votes: newVotesCount, voteType });
         } else {
           const newVotesCount = voteType === 'up' ? article.votes + 1 : article.votes - 1;
           setArticle({ ...article, votes: newVotesCount, voteType });
