@@ -21,19 +21,21 @@ const SingleArticle = () => {
       }, [article_id]);
 
       const handleVote = (voteType) => {
-        if (hasVoted) {
-            setVoteError("Ooops! Looks like you can only vote once!");
+        if (hasVoted && voteType === article.voteType) {
+          setVoteError("Oooops! You have already voted once!");
+          return;
+        } else if (hasVoted && voteType !== article.voteType) {
+          const newVotesCount = voteType === 'up' ? article.votes + 2 : article.votes - 2;
+          setArticle({ ...article, votes: newVotesCount, voteType });
         } else {
-            const newVotesCount = voteType === 'up' ? article.votes + 1 : article.votes - 1;
-
-            voteOnArticle(article_id, voteType)
-                .then(() => {
-                    setArticle({ ...article, votes: newVotesCount });
-                    setHasVoted(true);
-                })
+          const newVotesCount = voteType === 'up' ? article.votes + 1 : article.votes - 1;
+          setArticle({ ...article, votes: newVotesCount, voteType });
+          setHasVoted(true);
+          voteOnArticle(article_id, voteType)
                 .catch((error) => {
                     setVoteError(error.message);
                     setArticle({ ...article, votes: article.votes });
+                    setHasVoted(false);
                 });
         }
     };
