@@ -44,3 +44,10 @@ export const fetchComments = (article_id) => {
 
 }
 
+export const voteOnArticle = (article_id, voteType) => {
+  return instance
+  .patch(`/articles/${article_id}`, {inc_votes: voteType === "up" ? 1 : -1})
+  .then((response) => {
+    return response.data.article
+  })
+}
