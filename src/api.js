@@ -35,3 +35,12 @@ export const fetchArticleById = (article_id) => {
   })
 }
 
+export const fetchComments = (article_id) => {
+  return instance
+  .get(`/articles/${article_id}/comments`)
+  .then((response) => {
+    return response.data.comments;
+  })
+
+}
+

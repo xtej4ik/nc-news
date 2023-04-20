@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchArticleById } from '../api';
+import '../styles.css'
+import Comments from './Comments';
 
 const SingleArticle = () => {
     const [article, setArticle] = useState({});
@@ -21,6 +23,7 @@ const SingleArticle = () => {
             {isLoading ? (
                 <h3>Loading...</h3>
             ) : (
+                <ul>
             <div key={article.article_id} className="article">
                 <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                 <h4>Title: {article.title}</h4>
@@ -30,7 +33,9 @@ const SingleArticle = () => {
                 <time>Created at: {article.created_at}</time>
                 <p>Votes: {article.votes}</p>
                 <p>Comments: {article.comments}</p>
+                <Comments article_id={article_id} />
             </div>
+            </ul>
             )}
         </section>
     )
