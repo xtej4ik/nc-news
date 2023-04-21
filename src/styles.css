@@ -19,7 +19,7 @@
   color: white;
   background-color:  #a02c5945;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   min-height: 14vh;
 }
 
@@ -117,12 +117,11 @@
 }
 
 .login-button {
-  margin: .3em;
-  position: absolute;
+  margin: .7em;
   top: 20px;
   left: 20px;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 1em 1em;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -142,3 +141,54 @@
   box-shadow: 0 5px #2c5c42;
   transform: translateY(4px);
 }
+
+.votesUp {
+  margin-right: 3px;
+    left: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #070707;
+    border: none;
+    border-radius: 15px;
+  
+  }
+  .votesUp {
+    background-color: #0d1e0e3c;
+    box-shadow: 0 5px #2c5c42;
+    transform: translateY(4px);
+  }
+.votesDown {
+  margin-left: 3px;
+    left: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #0e0e0e;
+    border: none;
+    border-radius: 15px;
+}
+  .votesDown {
+    background-color: #0d1e0e3c;
+    box-shadow: 0 5px #2c5c42;
+    transform: translateY(4px);
+  }
+
+  .logged-in-user-container{
+    margin-right: .5em;
+    display: flex;
+    flex-grow: 1;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }

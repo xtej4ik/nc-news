@@ -9,13 +9,20 @@ const Nav = ({ user, setUser }) => {
     if (user) {
         return (
             <div className='navbar'>
-                <p>{user.name}</p>
-                <img className="avatar" alt="avatar" src={user.avatar_url} />
                 <button className="login-button" onClick={logout}>Logout </button>
+                <button className="login-button" onClick={() => navigate('/all-users')}>User List</button>
+                <div className='logged-in-user-container'>
+                    <p>{user.name}</p>
+                    <img className="avatar" alt="avatar" src={user.avatar_url} />
+                </div>
             </div>
         )
     } else {
-        return (<div className='navbar'><button className="login-button" onClick={() => navigate('/sign-in')}>Login</button></div>)
+        return (
+            <div className='navbar'>
+                <button className="login-button" onClick={() => navigate('/sign-in')}>Login</button>
+                <button className="login-button" onClick={() => navigate('/all-users')}>User List</button>
+            </div>)
     }
 
 }

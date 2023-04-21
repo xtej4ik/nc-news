@@ -4,6 +4,7 @@ import { fetchArticleById } from '../api';
 import '../styles.css'
 import Comments from './Comments';
 import { voteOnArticle } from '../api';
+import { FaSmile, FaRegSadCry } from 'react-icons/fa';
 
 const SingleArticle = () => {
     const [article, setArticle] = useState({});
@@ -52,8 +53,8 @@ const SingleArticle = () => {
                 <p>Body: {article.body}</p>
                 <time>Created at: {article.created_at}</time>
                 <p> Votes: {article.votes} &nbsp;
-                <button onClick={() => handleVote('up')}>Up</button>
-                <button onClick={() => handleVote('down')}>Down</button>
+                <button className="votesUp" onClick={() => handleVote('up')}><FaSmile></FaSmile></button>
+                <button className="votesDown" onClick={() => handleVote('down')}><FaRegSadCry></FaRegSadCry></button>
                 </p>{voteError && <p>Error: {voteError}</p>}
                 <Comments article_id={article_id} />
             </div>
