@@ -292,6 +292,15 @@
 }
 
 
+.users-card {
+  box-sizing: border-box;
+  float: left;
+  width: 40%;
+  padding: 7rem;
+  
+}
+
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -337,14 +346,14 @@
 }
 
 .flip-card-back {
-  background-color: #008a3e;
+  background-color: #b6cb62;
   color: white;
   transform: rotateY(180deg);
+  
 }
 
 
-.userbutton {
-  position: absolute;
+.user-button {
   top: 20px;
   left: 20px;
   display: inline-block;
@@ -361,11 +370,11 @@
   box-shadow: 0 9px #5a9583;
 }
 
-.userbutton:hover {
+.user-button:hover {
   background-color: #454945
 }
 
-.userbutton:active {
+.user-button:active {
   background-color: #0d1e0e3c;
   box-shadow: 0 5px #2c5c42;
   transform: translateY(4px);
@@ -381,7 +390,6 @@
 
 .footer {
   position: static;
-  font-size: 2.5rem;
   width: 100%;
   background-color: rgba(255, 0, 89, 0.277);
   color: rgb(241, 244, 242);
@@ -390,6 +398,7 @@
 }
 
 .glow {
+  height: 4rem;
   font-size: 2.5rem;
   color: #fff;
   text-align: center;

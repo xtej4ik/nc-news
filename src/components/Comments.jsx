@@ -53,7 +53,7 @@ function Comments({ article_id }) {
             <form onSubmit={handleSubmit}>
             <label>
                 Add a new comment:
-                <input
+                <textarea
                     value={newComment}
                     onChange={(event) => setNewComment(event.target.value)}
                 />
