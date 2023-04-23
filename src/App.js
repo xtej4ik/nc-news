@@ -9,6 +9,7 @@ import Nav from "./components/Nav";
 import Comments from "./components/Comments";
 import { UserContext } from "./contexts/User";
 import { ToastContainer, toast } from 'react-toastify';
+import Footer from "./components/Footer";
 
 import 'react-toastify/dist/ReactToastify.css';
 import UserList from "./components/UserList";
@@ -43,8 +44,11 @@ function App() {
     <UserContext.Provider value={user}>
       <div className="App">
         <div className="div1">
-          <button className="homebutton" id="HomeButton" onClick={navigateAllArticles}>
+          <button className="home-button" id="HomeButton" onClick={navigateAllArticles}>
             Home
+          </button>
+          <button 
+          className="topics-button" onClick={() => navigate('/topics')}>Topics
           </button>
         </div>
         <Header />
@@ -56,6 +60,7 @@ function App() {
           <Route path="/articles/:article_id/comments" element={<Comments/>} />
           <Route path="/all-users" element={<UserList setUser={setUser}/>} />
         </Routes>
+        <Footer />
       </div>
       <ToastContainer />
     </UserContext.Provider>

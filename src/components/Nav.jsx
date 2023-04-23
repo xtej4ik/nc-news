@@ -21,7 +21,7 @@ const Nav = ({ user, setUser }) => {
         return (
             <div className='navbar'>
                 <button className="login-button" onClick={() => navigate('/sign-in')}>Login</button>
-                <button className="login-button" onClick={() => navigate('/all-users')}>User List</button>
+                <button className="login-button" onClick={() => navigate('/all-users')}>Users</button>
             </div>)
     }
 
