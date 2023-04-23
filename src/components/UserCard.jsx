@@ -32,7 +32,6 @@ export const UserCard = ({ user, setUser }) => {
             </br>
             <br>
             </br>
-
             <button classnName="userbutton" onClick={impersonate}>login as</button>
             <br>
             </br>

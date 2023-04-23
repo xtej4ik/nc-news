@@ -46,11 +46,10 @@ const SingleArticle = () => {
             ) : (
                 <ul>
             <div key={article.article_id} className="article">
-                <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                 <h4>Title: {article.title}</h4>
-                <section>Topic: {article.topic}</section>
-                <p>Author: {article.author}</p>
+                <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                 <p>Body: {article.body}</p>
+                <p>Author: {article.author}</p>
                 <time>Created at: {article.created_at}</time>
                 <p> Votes: {article.votes} &nbsp;
                 <button className="votesUp" onClick={() => handleVote('up')}><FaSmile></FaSmile></button>

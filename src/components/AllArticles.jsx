@@ -15,23 +15,19 @@ const AllArticles = ({ user }) => {
   }, [user]);
 
     return (
-        <section id="articles">
-        <h2>All Articles</h2>
+      <section id="articles" >
         {isLoading ? (
-        <h3>Loading...</h3>
+        <h2>Loading Articles, Please wait...</h2>
          ) : (
-        <ul>
+        <ul className="article-list">
           {list.map((article) => {
                 return (
-                  <div key={article.article_id} className="article">
+                  <div key={article.article_id} className="articles">
                       <Link to={`/articles/${article.article_id}`}> <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                       </Link>
                       <Link to={`/articles/${article.article_id}`}>
-                      <h4>Title: {article.title}</h4>
+                      <p className="articleTitle">{article.title} </p>
                       </Link>
-                      <section>Topic: {article.topic}</section>
-                      <p>Author: {article.author}</p>
-                      <p>Body: {article.body}</p>
                   </div>
               );
             })}

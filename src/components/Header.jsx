@@ -1,12 +1,16 @@
-
-
 const Header = () => {
     return (
       <header className="Header">
-        <div> <h1 className="tooltip">NC News 
-        <span className="tooltiptext">Best News! Check Yourself!</span>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+
+        <div> <h1 className="tooltip"> News for All
+        <span className="tooltiptext">Wow!</span>
         </h1></div>
-       
       </header>
     );
   };
