@@ -44,7 +44,7 @@ const SingleArticle = () => {
                 <h3>Loading...</h3>
             ) : (
                 <ul>
-            <div key={article.article_id} className="article">
+            <div key={article.article_id} className="article-card">
                 <h4>{article.title}</h4>
                 <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                 <p>{article.body}</p>
