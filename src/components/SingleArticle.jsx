@@ -40,15 +40,14 @@ const SingleArticle = () => {
 
     return (
         <section id="article">
-            <h2>Article</h2>
             {isLoading ? (
                 <h3>Loading...</h3>
             ) : (
                 <ul>
             <div key={article.article_id} className="article">
-                <h4>Title: {article.title}</h4>
+                <h4>{article.title}</h4>
                 <img src={article.article_img_url} alt="article" className="responsive-img"></img>
-                <p>Body: {article.body}</p>
+                <p>{article.body}</p>
                 <p>Author: {article.author}</p>
                 <time>Created at: {article.created_at}</time>
                 <p> Votes: {article.votes} &nbsp;

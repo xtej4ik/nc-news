@@ -131,8 +131,8 @@
 }
 
 .tooltip .tooltip-text {
-  top: -2em;
-  left: 3em;
+  top: -1em;
+  left: 7.5em;
   visibility: hidden;
   width: 2.8em;
   background-color: rgba(35, 117, 68, 0.549);
@@ -140,7 +140,7 @@
   text-align: center;
   border-radius: .5em;
   padding: .1em 0;
-
+  font-size: 0.5em;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -156,8 +156,8 @@
   top: 20px;
   left: 20px;
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px 15px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -165,8 +165,8 @@
   color: #fff;
   background-color: #235d25;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #5a9583;
+  border-radius: 10px;
+  box-shadow: 0 6px #5a9583;
 }
 
 .home-button:hover {
@@ -175,8 +175,8 @@
 
 .home-button:active {
   background-color: #0d1e0e3c;
-  box-shadow: 0 5px #2c5c42;
-  transform: translateY(4px);
+  box-shadow: 0 3px #2c5c42;
+  transform: translateY(2px);
 }
 
 .topics-button {
@@ -184,8 +184,8 @@
   top: 20px;
   right: 20px;
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px 15px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -193,8 +193,8 @@
   color: #fff;
   background-color: #235d25;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #5a9583;
+  border-radius: 10px;
+  box-shadow: 0 6px #5a9583;
 }
 
 .topics-button:hover {
@@ -203,19 +203,19 @@
 
 .topics-button:active {
   background-color: #0d1e0e3c;
-  box-shadow: 0 5px #2c5c42;
-  transform: translateY(4px);
+  box-shadow: 0 3px #2c5c42;
+  transform: translateY(2px);
 }
 
 
 
 .login-button {
-  margin: .9em;
+  margin: 1em;
   top: 20px;
   left: 20px;
   display: inline-block;
-  padding: 1em 1em;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -223,9 +223,14 @@
   color: #fff;
   background-color: #235d25;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #5a9583;
+  border-radius: 10px;
+  box-shadow: 0 6px #5a9583;
+  width: 90px;
+  height: 40px; 
+  white-space: nowrap;
+ 
 }
+
 
 .login-button:hover {
   background-color: #454945
@@ -233,8 +238,8 @@
 
 .login-button:active {
   background-color: #0d1e0e3c;
-  box-shadow: 0 5px #2c5c42;
-  transform: translateY(4px);
+  box-shadow: 0 3px #2c5c42;
+  transform: translateY(2px);
 }
 
 .votesUp {
@@ -293,18 +298,20 @@
 
 
 .users-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  float: left;
-  width: 40%;
-  padding: 7rem;
-  
+  width: 100%;
+  padding: 4rem;
 }
 
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px; 
+  height: 200px; 
   perspective: 1000px;
   margin: auto;
 }
@@ -357,8 +364,8 @@
   top: 20px;
   left: 20px;
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px 15px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -366,8 +373,8 @@
   color: #fff;
   background-color: #235d25;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #5a9583;
+  border-radius: 10px;
+  box-shadow: 0 6px #5a9583;
 }
 
 .user-button:hover {
@@ -376,8 +383,8 @@
 
 .user-button:active {
   background-color: #0d1e0e3c;
-  box-shadow: 0 5px #2c5c42;
-  transform: translateY(4px);
+  box-shadow: 0 3px #2c5c42;
+  transform: translateY(2px);
 }
 
 .article-list {
@@ -389,17 +396,14 @@
 }
 
 .footer {
-  position: static;
-  width: 100%;
-  background-color: rgba(255, 0, 89, 0.277);
-  color: rgb(241, 244, 242);
-  text-align-last: left;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .glow {
   height: 4rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
