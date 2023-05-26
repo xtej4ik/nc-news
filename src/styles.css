@@ -428,3 +428,64 @@
   background-color: #ffffff00;
   box-shadow: 0px 5px 5px rgba(25, 25, 26, 0.534);
 }
+
+.submit {
+  margin: 1em;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #235d25;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #5a9583;
+  width: 90px;
+  height: 40px; 
+  white-space: nowrap;
+ 
+}
+
+
+.submit:hover {
+  background-color: #454945
+}
+
+.submit:active {
+  background-color: #0d1e0e3c;
+  box-shadow: 0 3px #2c5c42;
+  transform: translateY(2px);
+}
+
+
+.comment-container {
+  display: flex;
+  align-items: center;
+}
+
+.comment-label {
+  margin-right: 10px;
+}
+
+textarea {
+  width: 200px; 
+  height: 20px;
+  resize: vertical;
+}
+
+.submit {
+  margin-left: 10px;
+}
+
+.each-comment {
+  margin: 0px;
+  box-shadow: 0px 5px 5px rgba(25, 25, 26, 0.534);
+  border-radius: 10px;
+  margin-bottom: 6rem;
+  height: 400px;
+  padding: 0.1rem;
+  position: relative;
+}

@@ -55,16 +55,18 @@ function Comments({ article_id }) {
       {user ? (
         <div>
           <form onSubmit={handleSubmit}>
-            <label>
-              Add a new comment:
-              <textarea
+                <div>
+            <label className="comment-label">
+                    Add a new comment:
+                <textarea
                 value={newComment}
                 onChange={(event) => setNewComment(event.target.value)}
               />
-            </label>
             {submitError && <p>Error: {submitError}</p>}
-            <button type="submit" disabled={isSubmitting}>Submit</button>
+            <button type="submit" className="submit" disabled={isSubmitting}>Submit</button>
             {commentSubmitted && <p>Comment submitted!</p>}
+            </label>
+                </div>
           </form>
         </div>
       ) : (
@@ -81,7 +83,7 @@ function Comments({ article_id }) {
         ) : (
           <ul>
            {comments.slice().reverse().map((comment) => (
-              <li key={comment.comment_id}>
+              <li className="each-comment" key={comment.comment_id}>
                 <p>{comment.body}</p>
                 <p>Author: {comment.author}</p>
                 <time>Created at: {comment.created_at}</time>
