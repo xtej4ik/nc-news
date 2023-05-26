@@ -4,6 +4,7 @@ import { fetchArticleById } from '../api';
 import '../styles.css'
 import Comments from './Comments';
 import { voteOnArticle } from '../api';
+import { FaSmile, FaRegSadCry } from 'react-icons/fa';
 
 const SingleArticle = () => {
     const [article, setArticle] = useState({});
@@ -39,21 +40,19 @@ const SingleArticle = () => {
 
     return (
         <section id="article">
-            <h2>Article</h2>
             {isLoading ? (
                 <h3>Loading...</h3>
             ) : (
                 <ul>
-            <div key={article.article_id} className="article">
+            <div key={article.article_id} className="article-card">
+                <h4>{article.title}</h4>
                 <img src={article.article_img_url} alt="article" className="responsive-img"></img>
-                <h4>Title: {article.title}</h4>
-                <section>Topic: {article.topic}</section>
+                <p>{article.body}</p>
                 <p>Author: {article.author}</p>
-                <p>Body: {article.body}</p>
                 <time>Created at: {article.created_at}</time>
                 <p> Votes: {article.votes} &nbsp;
-                <button onClick={() => handleVote('up')}>Up</button>
-                <button onClick={() => handleVote('down')}>Down</button>
+                <button className="votesUp" onClick={() => handleVote('up')}><FaSmile></FaSmile></button>
+                <button className="votesDown" onClick={() => handleVote('down')}><FaRegSadCry></FaRegSadCry></button>
                 </p>{voteError && <p>Error: {voteError}</p>}
                 <Comments article_id={article_id} />
             </div>

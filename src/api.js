@@ -27,6 +27,14 @@ export const signIn = (username) => {
     });
 }
 
+export const getAllUsers = () => {
+  return instance
+  .get("/users")
+  .then((response) => {
+    return response.data.users;
+  });
+}
+
 export const fetchArticleById = (article_id) => {
   return instance
   .get(`/articles/${article_id}`)
@@ -49,5 +57,13 @@ export const voteOnArticle = (article_id, voteType) => {
   .patch(`/articles/${article_id}`, {inc_votes: voteType === "up" ? 1 : -1})
   .then((response) => {
     return response.data.article
+  })
+}
+
+export const commentAdder = (article_id, comment) => {
+  return instance
+  .post(`/articles/${article_id}/comments`, comment)
+  .then((response) => {
+    return response.data.comment
   })
 }
