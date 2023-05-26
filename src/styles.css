@@ -421,6 +421,7 @@
 }
 
 .article-card{
+ font-size: medium;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
@@ -481,11 +482,12 @@ textarea {
 }
 
 .each-comment {
+  font-size: x-small;
   margin: 0px;
   box-shadow: 0px 5px 5px rgba(25, 25, 26, 0.534);
   border-radius: 10px;
   margin-bottom: 6rem;
-  height: 400px;
+  height: 150px;
   padding: 0.1rem;
   position: relative;
 }
