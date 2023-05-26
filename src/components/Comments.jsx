@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { fetchComments, commentAdder } from "../api"
 import "../styles.css"
 import { UserContext } from "../contexts/User";
+import { formatDate } from "../utils"
 
 function Comments({ article_id }) {
   const [isLoading, setLoading] = useState(true);
@@ -85,8 +86,8 @@ function Comments({ article_id }) {
            {comments.slice().reverse().map((comment) => (
               <li className="each-comment" key={comment.comment_id}>
                 <p>{comment.body}</p>
-                <p>Author: {comment.author}</p>
-                <time>Created at: {comment.created_at}</time>
+                <p>Written by {comment.author}</p>
+                <time>Created at: {formatDate(comment.created_at)}</time>
               </li>
             ))}
           </ul>

@@ -2,7 +2,7 @@ import '../styles.css'
 const Footer = () => {
     return (
         <div className="footer">
-          <h1 className="glow">&#129361;Inna Chtej</h1>
+          <h2 className="glow">&#129361;www.linkedin.com/in/inna-chtej</h2>
         </div>
       );
 

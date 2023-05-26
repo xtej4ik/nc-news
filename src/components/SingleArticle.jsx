@@ -5,6 +5,7 @@ import '../styles.css'
 import Comments from './Comments';
 import { voteOnArticle } from '../api';
 import { FaSmile, FaRegSadCry } from 'react-icons/fa';
+import { formatDate } from "../utils"
 
 const SingleArticle = () => {
     const [article, setArticle] = useState({});
@@ -48,8 +49,8 @@ const SingleArticle = () => {
                 <h4>{article.title}</h4>
                 <img src={article.article_img_url} alt="article" className="responsive-img"></img>
                 <p>{article.body}</p>
-                <p>Author: {article.author}</p>
-                <time>Created at: {article.created_at}</time>
+                <p>Written by {article.author}</p>
+                <time>Created at: {formatDate(article.created_at)}</time>
                 <p> Votes: {article.votes} &nbsp;
                 <button className="votesUp" onClick={() => handleVote('up')}><FaSmile></FaSmile></button>
                 <button className="votesDown" onClick={() => handleVote('down')}><FaRegSadCry></FaRegSadCry></button>
