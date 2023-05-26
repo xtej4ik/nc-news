@@ -63,7 +63,7 @@ function Comments({ article_id }) {
               />
             </label>
             {submitError && <p>Error: {submitError}</p>}
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={isSubmitting}>Submit</button>
             {commentSubmitted && <p>Comment submitted!</p>}
           </form>
         </div>
