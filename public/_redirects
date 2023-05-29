@@ -1,0 +1,5 @@
+/* /index.html 200
+
+/*This code telling Netlify "if a request comes in to any endpoint on our base url
+ - serve our index.html page and give a 200 status". We put this in the public directory
+  to ensure that Webpack includes this file in the production build of the app.*/
