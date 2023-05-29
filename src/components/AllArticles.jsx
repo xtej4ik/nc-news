@@ -17,7 +17,7 @@ const AllArticles = ({ user }) => {
     return (
       <section id="articles" >
         {isLoading ? (
-        <h2>Loading Articles, Please wait...</h2>
+        <h2 className="spinner" ></h2>
          ) : (
         <ul className="article-list">
           {list.map((article) => {

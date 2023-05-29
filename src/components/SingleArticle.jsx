@@ -42,7 +42,7 @@ const SingleArticle = () => {
     return (
         <section id="article">
             {isLoading ? (
-                <h3>Loading...</h3>
+                <h3 className="spinner"></h3>
             ) : (
                 <ul>
             <div key={article.article_id} className="article-card">
