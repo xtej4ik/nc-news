@@ -13,7 +13,7 @@ Article Preference: Once logged in, you have the ability to express your opinion
 Note: The application is seamlessly deployed on Netlify, ensuring a smooth and reliable user experience.
 
 ## Demo
-Experience the live demonstration of the project by visiting the following link: -------------> in progress(will be added soon)
+Experience the live demonstration of the project by visiting the following link: https://nc-newsbyinna.netlify.app
 
 ### Tech Stack
 - JavaScript
