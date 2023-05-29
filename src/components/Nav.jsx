@@ -20,7 +20,7 @@ const Nav = ({ user, setUser }) => {
     } else {
         return (
             <div className='navbar'>
-             
+            
                 <button className="login-button" onClick={() => navigate('/all-users')}>Login as</button>
             </div>)
     }

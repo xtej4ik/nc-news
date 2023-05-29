@@ -86,11 +86,6 @@
   white-space: normal;
 }
 
-
-
-
-
-
 .accordion {
   background-color: #eeeeee90;
   color: #444;
@@ -124,12 +119,13 @@
 }
 
 .tooltip {
-  margin: 0.4em;
+  top: -2em;
+  margin: 0.3em;
   right: -14em;
   font-size: 1em;
   position: relative;
   display: inline-block;
-  border-bottom: .03em dotted black;
+
 }
 
 .tooltip .tooltip-text {
@@ -208,7 +204,6 @@
   box-shadow: 0 3px #2c5c42;
   transform: translateY(2px);
 }
-
 
 
 .login-button {

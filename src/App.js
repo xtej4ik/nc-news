@@ -47,9 +47,9 @@ function App() {
           <button className="home-button" id="HomeButton" onClick={navigateAllArticles}>
             Home
           </button>
-          <button 
-          className="topics-button" onClick={() => navigate('/topics')}>Topics
-          </button>
+          <button className="login-button" onClick={() => navigate('/topics')}>Coding</button>
+             <button className="login-button" onClick={() => navigate('/topics')}>Football</button>
+             <button className="login-button" onClick={() => navigate('/topics')}>Cooking</button>
         </div>
         <Header />
         <Nav  user={user} setUser={setUser}/>
