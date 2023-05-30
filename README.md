@@ -21,7 +21,7 @@ Experience the live demonstration of the project by visiting the following link:
 - CSS
 - React
 - Axios
-- 
+ 
 #### Installation and Set-up
 To run the project locally follow these steps:
 
