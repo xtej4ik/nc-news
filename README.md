@@ -1,4 +1,4 @@
-# Project Description:
+# Northcoders Front End Project Description:
 
 Welcome to this responsive front-end project that showcases the power of the NC-NEWS-API. This project offers an engaging user experience with the following features:
 
@@ -13,7 +13,7 @@ Article Preference: Once logged in, you have the ability to express your opinion
 Note: The application is seamlessly deployed on Netlify, ensuring a smooth and reliable user experience.
 
 ## Demo
-Experience the live demonstration of the project by visiting the following link: https://nc-newsbyinna.netlify.app
+Experience the live demonstration of the project [here](https://newsfrontend.inna.codes/)
 
 ### Tech Stack
 - JavaScript
