@@ -10,8 +10,6 @@ Welcome to this responsive front-end project that showcases the power of the NC-
 - Logout Capability: Easily log out whenever you wish to end your session.
 - Article Preference: Once logged in, you have the ability to express your opinion on an article by liking or disliking it.
 
-Note: The application is seamlessly deployed on Netlify, ensuring a smooth and reliable user experience.
-
 ## Demo
 Experience the live demonstration of the project [here](https://newsfrontend.inna.codes/)
 
