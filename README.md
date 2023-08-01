@@ -2,13 +2,13 @@
 
 Welcome to this responsive front-end project that showcases the power of the NC-NEWS-API. This project offers an engaging user experience with the following features:
 
-Browse News Articles: As a user, you can effortlessly explore a list of news articles.
-Individual Article View: Gain access to detailed information about each article, providing a deeper understanding of the content.
-Likes Counter: Stay informed about the popularity of articles by viewing the number of likes they have received.
-Comment Section: Engage in discussions and gain insights from fellow users through the comments section.
-User Authentication: Enjoy the benefits of user login functionality, allowing you to personalize your experience.
-Logout Capability: Easily log out whenever you wish to end your session.
-Article Preference: Once logged in, you have the ability to express your opinion on an article by liking or disliking it.
+- Browse News Articles: As a user, you can effortlessly explore a list of news articles.
+- Individual Article View: Gain access to detailed information about each article, providing a deeper understanding of the content.
+- Likes Counter: Stay informed about the popularity of articles by viewing the number of likes they have received.
+- Comment Section: Engage in discussions and gain insights from fellow users through the comments section.
+- User Authentication: Enjoy the benefits of user login functionality, allowing you to personalize your experience.
+- Logout Capability: Easily log out whenever you wish to end your session.
+- Article Preference: Once logged in, you have the ability to express your opinion on an article by liking or disliking it.
 
 Note: The application is seamlessly deployed on Netlify, ensuring a smooth and reliable user experience.
 
